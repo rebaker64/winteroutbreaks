@@ -4,4 +4,4 @@ Code to recreate main results from https://www.medrxiv.org/content/10.1101/2020.
 
 "NYepiestim.R" estimates R effective for New York using nytimes county-level data 
 
-"qout.RData" is weekly specific humidity data for New York summarized from ERA5
+"NYq.RData" is weekly specific humidity data for New York summarized from ERA5
