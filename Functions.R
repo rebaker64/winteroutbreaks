@@ -8,18 +8,6 @@ runModelWithR  <- function(pop = 3000000,
                           LonCity = -74.6, SSet = "Orig", Lead = 0, Var = -180, birthrate=0,
                           timeLengthSim = 364, SHDAT = SHDAT, ISet = "Orig", R0min = 1.5, R0max = 2.5, Rchange = 1){
   
-  library(deSolve)
-  library(doBy)
-  library(viridis)
-  library("raster")
-  library("lubridate")
-  library("ncdf4")
-  library("psych")
-  library("sp")
-  library("maps")
-  library("maptools")
-  library("rgdal")
- 
   qout <- SHDAT
   if(Lead==0){
     qout <- rep(qout, each = 7)}
@@ -142,31 +130,8 @@ runModelControl  <- function(pop = 3000000,
 
 
 loadpackages <- function(){
-  library("pals")
-  library(geosphere)
-  require("plotrix")
-  require("raster")
-  require("rgdal")
-  require("dplyr")
-  require("doBy")
-  require("ncdf4")
-  require("lubridate")
-  require(EpiEstim)
-  require(dplyr)
-  require(ggplot2)
-  require(RCurl)
-  require(reshape2)
-  require(purrr)
-  require(lubridate)
   require("harrypotter")
   library(deSolve)
-  library(doBy)
-  library(viridis)
   library("lubridate")
-  library("ncdf4")
-  library("psych")
-  library("sp")
-  library("maps")
-  library("maptools")
   
 }
